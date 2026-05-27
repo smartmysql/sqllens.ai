@@ -1,34 +1,26 @@
-# Query Builder demo
+# Visual Query Builder
 
-**Audience:** Sales, solutions engineering, onboarding.  
-**Product:** Schema-driven query assembly in the **SQL editor** — drag tables and columns from the connection tree, use inline shortcuts before a drop, and get **foreign-key-aware JOIN** suggestions.
+Build complex SQL in the editor by dragging tables and columns from your connection tree. SQLLens infers JOINs from foreign keys, adapts to the active SQL clause, and supports keyboard shortcuts before each drop.
 
-![Query Builder landing demo](../media/gifs/query-builder-landing-demo.gif)
+<p align="center">
+  <img src="../media/gifs/query-builder-landing-demo.gif" alt="Visual Query Builder" width="720" />
+</p>
 
-## Value proposition
+## Key capabilities
 
-- **Speed** — Assemble `SELECT` / `UPDATE` / `DELETE` / `INSERT` without retyping object names.  
-- **Correctness** — JOIN conditions from cached FK metadata, including bridge tables and multiple paths (with disambiguation when needed).  
-- **Context-aware columns** — Drops respect cursor clause: `WHERE`, `SELECT`, `JOIN … ON`, `ORDER BY`, `GROUP BY`, `HAVING`, `SET`.  
-- **Keyboard rhythm** — Short tokens typed **before** dragging (`s`, `LJ`, `W`, …) expand into patterns; the drag fills in tables or columns.
+- Drag **tables** to start `SELECT`, `UPDATE`, `DELETE`, or `INSERT` statements  
+- Add **JOINs** with type shortcuts (`LJ`, `RJ`, `IJ`, …) before dropping the next table  
+- Drop **columns** into `SELECT`, `WHERE`, `JOIN … ON`, `GROUP BY`, `ORDER BY`, and more  
+- Resolve ambiguous relationship paths with explicit prompts instead of silent guesses  
 
-## Feature checklist
+## Demo walkthrough
 
-| # | Feature | User action |
-|---|---------|-------------|
-| 1 | New query from table | Drag a **table** onto an empty or valid line |
-| 2 | JOIN expansion | Drag a second table when a `SELECT` is in scope |
-| 3 | JOIN shortcuts | Type `IJ`, `LJ`, `RJ`, `FJ`, `CJ` before drag |
-| 4 | Clause-aware column drop | Drag **column** with cursor in `SELECT` / `WHERE` / `ON` / etc. |
-| 5 | DML shortcuts | `s`/`sel` → SELECT; `u` → UPDATE; `d` → DELETE; `i` → INSERT |
-| 6 | WHERE helpers | `W`, `WL`/`WLIKE`, `WIN`, `WB`/`WBET`, `WN`/`WNULL`, … |
-| 7 | ORDER / GROUP / HAVING | `OA`/`ORDER`, `GROUP`, `HAVING` + column drag |
-| 8 | Aggregates | `COUNT`, `SUM`, `AVG`, … + column |
-| 9 | Connection alignment | Active connection + database match the editor |
+1. Connect to a database and open a new `.sql` file bound to that schema.  
+2. Drag the **employees** table onto an empty line to seed a `SELECT`.  
+3. Type `LJ` and drag **dept_emp**, then **departments**, to build a multi-table join.  
+4. Drag columns into `GROUP BY` and `ORDER BY` to finish an aggregate report.  
 
-## Demo scenario 1 — Headcount by department
-
-Target SQL (narrate: shortcut → drag `employees` → drag `dept_emp` → drag `departments` → GROUP BY drops):
+## Example outcome
 
 ```sql
 SELECT d.dept_name, COUNT(*) AS headcount
@@ -39,30 +31,4 @@ GROUP BY d.dept_name
 ORDER BY headcount DESC;
 ```
 
-## Demo scenario 2 — Average salary by department
-
-```sql
-SELECT d.dept_name, ROUND(AVG(s.salary), 2) AS avg_salary
-FROM salaries s
-JOIN employees e ON e.emp_no = s.emp_no
-JOIN dept_emp de ON de.emp_no = e.emp_no AND de.to_date = '9999-01-01'
-JOIN departments d ON d.dept_no = de.dept_no
-WHERE s.to_date = '9999-01-01'
-GROUP BY d.dept_name
-ORDER BY avg_salary DESC;
-```
-
-## Optional highlight reel
-
-![Query Builder highlight](../media/gifs/query-builder-highlight-demo.gif)
-
-## Talk-track tips
-
-- If JOIN disambiguation appears, frame it positively: *multiple FK paths — the tool asks you to choose instead of guessing wrong.*  
-- Pair with **Query Optimizer** when the assembled query is slow on realistic row counts.
-
-## Related demos
-
-- [SQL workspace](sql-workspace.md)  
-- [Query Optimizer](query-optimizer.md)  
-- [Demo catalog](README.md)
+<p align="center"><a href="README.md">← All demo guides</a></p>

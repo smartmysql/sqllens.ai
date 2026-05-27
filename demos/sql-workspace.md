@@ -1,50 +1,29 @@
-# SQL workspace demo
+# SQL Workspace
 
-**Product:** Database explorer, SQL editor, per-file database context, CodeLens, and Query Results — the daily workspace inside VS Code or Cursor.
+The daily MySQL editing experience: connection explorer, per-file database context, SQL editor, CodeLens actions, and query results.
 
-## Connect {#connect}
+<p align="center">
+  <img src="../media/gifs/sql-workspace-overview-demo.gif" alt="SQL workspace overview" width="720" />
+</p>
 
-1. Install **SQLLens.AI** from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens).  
-2. Open the **SQLLens.AI** activity bar.  
-3. **Add connection** — host, port, user, password; optional default database, SSL, SSH tunnel.  
-4. **Test connection** before save.  
-5. Expand the tree: server → database → tables.  
+## Key capabilities
 
-## Walkthrough script
+- Tree explorer for servers, databases, tables, and columns  
+- Per-tab **database context** so the right schema is always active  
+- **Run**, **Explain**, and favorites from the editor  
+- Integrated results panel with export options  
 
-### 1. Workspace overview
+## Get started
 
-1. Show sidebar tree + SQL editor + Query Results panel layout.  
-2. Open `employees` (or your demo schema).  
-3. Create a new `.sql` file; note **per-file @ DB** or active database badge when switching schemas.
+1. Install [SQLLens.AI](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) from the Marketplace.  
+2. Open the SQLLens sidebar and **Add connection** (host, port, user, password).  
+3. Test the connection, expand your database, and create a new `.sql` file.  
+4. Execute a query with CodeLens **Run** and review results below the editor.  
 
-![SQL workspace overview](../media/gifs/sql-workspace-overview-demo.gif)
+## Run & EXPLAIN
 
-### 2. Run and EXPLAIN
+<p align="center">
+  <img src="../media/gifs/sql-workspace-run-demo.gif" alt="Run and EXPLAIN in the editor" width="720" />
+</p>
 
-1. Paste or build a `SELECT` with CodeLens **Run** / **Explain**.  
-2. Show result grid, export, and error handling.  
-3. Transition to [Query Optimizer](query-optimizer.md) for the same statement.
-
-![Run and EXPLAIN](../media/gifs/sql-workspace-run-demo.gif)
-
-## Favorites & productivity (optional)
-
-- Save frequent queries to favorites from the editor.  
-- Mention keyboard shortcuts doc in full product documentation on [skylineai.app](https://skylineai.app).  
-
-## Day-one checklist
-
-| Step | Done |
-|------|------|
-| Extension installed | ☐ |
-| Connection tested | ☐ |
-| Tree expanded for demo DB | ☐ |
-| `.sql` file bound to correct database | ☐ |
-| One query executed successfully | ☐ |
-
-## Related demos
-
-- [Query Builder](query-builder.md)  
-- [AI integration](ai-integration.md)  
-- [Demo catalog](README.md)
+<p align="center"><a href="README.md">← All demo guides</a></p>

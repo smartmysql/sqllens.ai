@@ -1,44 +1,29 @@
-# AI & LLM integration demo
+# AI SQL Copilot
 
-**Product:** Generate, fix, and explain SQL using integrated cloud routing and/or your own provider keys — without leaving the editor.
+Generate, fix, and explain SQL from natural language — with full awareness of the database bound to your editor tab.
 
-## Walkthrough script
+<p align="center">
+  <img src="../media/gifs/ai-integration-demo-v4.gif" alt="AI SQL Copilot" width="720" />
+</p>
 
-### 1. AI SQL Copilot (sqllens.ai showcase 02)
+## Key capabilities
 
-1. Open the **AI Assist** panel or command tied to SQL generation.  
-2. Prompt example: *“List employees hired in 1999 with current salary above department average.”*  
-3. Show generated SQL inserted or offered into the active editor.  
-4. Emphasize **active database context** — generation respects the connection/schema bound to the file.
+- **Generate** queries from a plain-English description  
+- **Fix** broken SQL with context-aware suggestions  
+- **Explain** logic for onboarding and code review  
+- Works with integrated cloud routing or your own LLM provider configuration  
 
-![AI SQL Copilot — same as sqllens.ai showcase 02](../media/gifs/ai-integration-demo-v4.gif)
+## Demo walkthrough
 
-### 2. Generate & autocomplete (gallery)
+1. Open the AI Assist panel with an active MySQL connection.  
+2. Ask: *“List employees hired in 1999 with salary above their department average.”*  
+3. Review the generated SQL, run it, and show results in the query panel.  
+4. Introduce a deliberate error, run **Fix SQL**, and walk through the correction.  
 
-![AI SQL integration overview](../media/gifs/ai-integration-demo.gif)
+## Additional recording
 
-### 3. Fix / explain flow
+<p align="center">
+  <img src="../media/gifs/ai-integration-demo.gif" alt="AI generate and autocomplete" width="720" />
+</p>
 
-1. Paste a broken query (missing join, wrong alias).  
-2. Run **Fix SQL** or **Explain this query**.  
-3. Narrate diff or explanation panel — suitable for onboarding junior devs.
-
-## Talk-track
-
-| Audience | Message |
-|----------|---------|
-| Team leads | Faster first draft; human review still required |
-| Security | Optional local-only providers; cloud sign-in is optional |
-| Finance | Usage tied to sqllens.ai account when cloud routing is enabled |
-
-## Guardrails to mention
-
-- Always review generated DDL/DML before running on production.  
-- Read-only connections should block destructive suggestions at execution time.  
-- Enterprise policies may require cloud-only or cloud-disabled modes.  
-
-## Related demos
-
-- [SQL workspace](sql-workspace.md)  
-- [Query Builder](query-builder.md)  
-- [Demo catalog](README.md)
+<p align="center"><a href="README.md">← All demo guides</a></p>

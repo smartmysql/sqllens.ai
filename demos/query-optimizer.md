@@ -1,34 +1,32 @@
-# Query Optimizer (QO) demo
+# Query Optimization Engine
 
-**Product:** Turn the server execution plan into an interactive tree, score steps, and suggest indexes or rewrites.
+Diagnose slow queries with Visual Explain and the optimizer workbench — index suggestions, plan scoring, and optional batch review.
 
-## When to use QO
+<p align="center">
+  <img src="../media/gifs/query-optimizer-workbench-demo.gif" alt="Query Optimizer workbench" width="720" />
+</p>
 
-- Query is slow on representative data  
-- `EXPLAIN` shows `type: ALL` or large row estimates  
-- Before shipping a feature with heavy reads  
+## Key capabilities
 
-## Walkthrough script
+- Interactive **execution plan** tree with cost highlights  
+- **Index recommendations** tied to real statistics  
+- **Before / after** comparison when trying rewrites on a dev instance  
+- **Batch optimize** for multiple statements from slow-query analysis  
 
-### 1. Query Optimization Engine (sqllens.ai showcase 03)
+## Demo walkthrough
 
-1. From a slow query, open the **Query Optimizer** workbench.  
-2. Show original SQL, plan tree, and **index suggestions**.  
-3. If available, demonstrate **before / after** cost comparison after applying a suggested index (on a dev instance).  
-4. Mention **batch optimize** when reviewing multiple statements from Slow Query Log Analyzer.
+1. Open a slow `SELECT` on representative data (multi-table join recommended).  
+2. Launch the **Query Optimizer** workbench from CodeLens or the Command Palette.  
+3. Walk through the plan tree: scans, row estimates, and highest-cost steps.  
+4. Apply a suggested index on a non-production database and re-run `EXPLAIN`.  
 
-![Optimizer workbench — same as sqllens.ai showcase 03](../media/gifs/query-optimizer-workbench-demo.gif)
+## Visual Explain
 
-### 2. Visual Explain (gallery)
+<p align="center">
+  <img src="../media/gifs/query-optimizer-visual-explain-demo.gif" alt="Visual Explain" width="720" />
+</p>
 
-1. Open a `.sql` file connected to your demo database.  
-2. Place the cursor on a slow `SELECT` (e.g. multi-table join on `employees`).  
-3. Use **Optimize** CodeLens above the statement, or **SQL: Visual Explain** from the Command Palette.  
-4. Narrate the plan tree: scan type, estimated rows, cost highlights.
-
-![Visual Explain](../media/gifs/query-optimizer-visual-explain-demo.gif)
-
-## Sample slow query (employees)
+## Example query
 
 ```sql
 SELECT e.first_name, e.last_name, s.salary
@@ -41,19 +39,4 @@ ORDER BY s.salary DESC
 LIMIT 20;
 ```
 
-**Beats:** Full table scan story → Visual Explain → index on `(emp_no, to_date)` or covering index discussion.
-
-## Settings to mention (optional)
-
-Users can tune verbosity and Visual Explain behavior under **Settings → SQLLens / Query Optimizer** (`skyline-mysql.queryOptimizer.*` keys in the extension settings UI).
-
-## Tips & limits
-
-- Re-run `EXPLAIN` after creating indexes to confirm the planner uses them.  
-- Suggestions are statistics-based — validate on production-like volume.  
-
-## Related demos
-
-- [Query Builder](query-builder.md) — build the query first  
-- [Performance Monitor](performance-monitor.md) — correlate with live server load  
-- [Demo catalog](README.md)
+<p align="center"><a href="README.md">← All demo guides</a></p>

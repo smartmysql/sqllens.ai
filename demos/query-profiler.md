@@ -1,28 +1,23 @@
-# Query Profiler demo
+# Slow Query Analyzer & Query Profiler
 
-**Product:** Profile a SQL session and read **stage timings** (parse, optimize, execute, etc.) inside the editor.
+Find expensive statements in slow-query logs and inspect stage-level timings for individual sessions.
 
-## Walkthrough script
+<p align="center">
+  <img src="../media/gifs/query-profiler-demo.gif" alt="Query Profiler" width="720" />
+</p>
 
-1. Connect to MySQL with profiling permitted for your user.  
-2. Open a representative query in the SQL editor.  
-3. Start **Query Profiler** from the Command Palette or context action.  
-4. Execute the statement; show the stage breakdown and total time.  
-5. Compare with **Visual Explain** from [Query Optimizer](query-optimizer.md) — profiler = *what time was spent*; explain = *how the plan ran*.
+## Key capabilities
 
-![Slow Query Analyzer & DB Profiler — same as sqllens.ai showcase 04](../media/gifs/query-profiler-demo.gif)
+- Rank statements by total time, average time, or call count  
+- Open a normalized query directly in the editor  
+- Hand off to the **Query Optimizer** for plan and index analysis  
+- **Profiler** view for parse, optimize, and execute stage breakdown  
 
-## Sample narrative
+## Demo walkthrough
 
-> “We ran the same join you saw in the Query Builder demo. Profiler shows most time in executing, not sending — so we open QO next to add an index.”
+1. Open **Slow Query Log Analyzer** from the sidebar or Command Palette.  
+2. Sort by total time and select a top offender.  
+3. Choose **Open in editor**, then **Optimize** to continue in the workbench.  
+4. Run **Query Profiler** on the same statement and compare stage timings.  
 
-## Tips
-
-- Use a dev database; profiling adds overhead.  
-- Repeat after an index change to show delta in execute stage.  
-
-## Related demos
-
-- [Query Optimizer](query-optimizer.md)  
-- [Performance Monitor](performance-monitor.md)  
-- [Demo catalog](README.md)
+<p align="center"><a href="README.md">← All demo guides</a></p>

@@ -1,47 +1,39 @@
-# Product demos
+# Demo guides
 
-Markdown scripts for sales and customer walkthroughs.  
-GIF filenames and order match **[sqllens.ai](https://sqllens.ai/)** (showcases 01–05, then the 12-card gallery).
+Step-by-step walkthroughs for presenting SQLLens.AI. Each guide matches a recording on [sqllens.ai](https://sqllens.ai/) and in [`../media/gifs/`](../media/gifs/).
 
-## Main showcases (website order 01–05)
+## Featured showcases
 
-| # | Feature | Guide | GIF |
-|---|---------|-------|-----|
-| 01 | Visual Query Builder | [query-builder.md](query-builder.md) | `query-builder-landing-demo.gif` |
-| 02 | AI SQL Copilot | [ai-integration.md](ai-integration.md) | `ai-integration-demo-v4.gif` |
-| 03 | Query Optimization Engine | [query-optimizer.md](query-optimizer.md) | `query-optimizer-workbench-demo.gif` |
-| 04 | Slow Query Analyzer & DB Profiler | [query-profiler.md](query-profiler.md) | `query-profiler-demo.gif` |
-| 05 | Performance Monitor | [performance-monitor.md](performance-monitor.md) | `performance-monitor-tour-demo.gif` |
+| | Feature | Guide |
+|---:|---------|-------|
+| 01 | [Visual Query Builder](query-builder.md) | Drag-and-drop SQL in the editor |
+| 02 | [AI SQL Copilot](ai-integration.md) | Natural language to production SQL |
+| 03 | [Query Optimization Engine](query-optimizer.md) | Plans, indexes, and rewrites |
+| 04 | [Slow Query Analyzer & Profiler](query-profiler.md) | Log analysis and session timings |
+| 05 | [Performance Monitor](performance-monitor.md) | Live diagnostics on demand |
 
-## Full gallery (website order)
+## Additional recordings
 
-| # | Feature | GIF |
-|---|---------|-----|
-| 1 | Visual Query Builder | `query-builder-landing-demo.gif` |
-| 2 | Query Builder — highlights | `query-builder-highlight-demo.gif` |
-| 3 | Query Builder — quick start | `query-builder-simple-demo.gif` |
-| 4 | SQL workspace | `sql-workspace-overview-demo.gif` |
-| 5 | Run & EXPLAIN | `sql-workspace-run-demo.gif` |
-| 6 | AI SQL Copilot | `ai-integration-demo.gif` |
-| 7 | AI fix & explain | `ai-integration-demo-v4.gif` |
-| 8 | Visual Explain | `query-optimizer-visual-explain-demo.gif` |
-| 9 | Query Optimizer workbench | `query-optimizer-workbench-demo.gif` |
-| 10 | Query Profiler | `query-profiler-demo.gif` |
-| 11 | Performance Monitor (open) | `performance-monitor-open-demo.gif` |
-| 12 | Performance Monitor tour | `performance-monitor-tour-demo.gif` |
+| | Feature | Recording |
+|---:|---------|-----------|
+| | [SQL workspace](sql-workspace.md) | Explorer, editor, and results |
+| | Query Builder — highlights | `query-builder-highlight-demo.gif` |
+| | Query Builder — quick start | `query-builder-simple-demo.gif` |
+| | Run & EXPLAIN | `sql-workspace-run-demo.gif` |
+| | AI — generate & autocomplete | `ai-integration-demo.gif` |
+| | Visual Explain | `query-optimizer-visual-explain-demo.gif` |
+| | Performance Monitor — open | `performance-monitor-open-demo.gif` |
 
-## Suggested live demo (30–45 min)
+All files are in [`../media/gifs/`](../media/gifs/).
 
-Follow website pillar order:
+## Recommended presentation flow (~40 minutes)
 
-1. [query-builder.md](query-builder.md) — 01 Visual Builder  
-2. [ai-integration.md](ai-integration.md) — 02 AI Copilot  
-3. [query-optimizer.md](query-optimizer.md) — 03 Optimization (+ Visual Explain in gallery)  
-4. [query-profiler.md](query-profiler.md) — 04 SQA / Profiler  
-5. [performance-monitor.md](performance-monitor.md) — 05 Performance Monitor  
+1. [SQL workspace](sql-workspace.md) — connect and open the sidebar *(5 min)*  
+2. [Query Builder](query-builder.md) — visual SQL assembly *(10 min)*  
+3. [AI SQL Copilot](ai-integration.md) — generate and fix a query *(8 min)*  
+4. [Query Optimizer](query-optimizer.md) — Visual Explain and indexes *(10 min)*  
+5. [Performance Monitor](performance-monitor.md) — live health check *(7 min)*  
 
-Optional: [sql-workspace.md](sql-workspace.md) for connect + editor basics (gallery items 4–5).
+## Demo database
 
-## Sample database
-
-MySQL **`employees`** schema — [datacharmer/test_db](https://github.com/datacharmer/test_db).
+For JOIN-heavy examples, use the MySQL **employees** sample database from [datacharmer/test_db](https://github.com/datacharmer/test_db).

@@ -1,92 +1,110 @@
-# sqllens.ai
+<p align="center">
+  <img src="media/logo-256.png" alt="SQLLens.AI" width="120" />
+</p>
 
-**Write SQL faster. Boost MySQL performance with AI.**  
-Advanced MySQL GUI for **VS Code** and **Cursor** — query builder, optimizer, profiler, performance monitor, and AI-assisted SQL.
+<h1 align="center">SQLLens.AI</h1>
 
-[![VS Marketplace](https://img.shields.io/badge/VS%20Marketplace-skylineai.sqllens-blue)](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens)
+<p align="center">
+  <strong>The autonomous database engineer for VS Code and Cursor.</strong><br/>
+  Write SQL faster, optimize performance with AI, and keep MySQL running at peak health.
+</p>
 
-> Public showcase: product demos, animated captures, and build metadata (same order as [sqllens.ai](https://sqllens.ai/)).  
-> Extension **source code** is not published here.
+<p align="center">
+  <a href="https://sqllens.ai/"><img src="https://img.shields.io/badge/Website-sqllens.ai-1a73e8?style=for-the-badge" alt="sqllens.ai" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens"><img src="https://img.shields.io/badge/Install-VS%20Marketplace-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Marketplace" /></a>
+</p>
 
-## Quick links
+<p align="center">
+  <a href="https://sqllens.ai/">Live product tour</a>
+  ·
+  <a href="demos/">Demo guides</a>
+  ·
+  <a href="mailto:hello@skylineai.app">Contact</a>
+</p>
 
-| Resource | Link |
-|----------|------|
-| Product website | [sqllens.ai](https://sqllens.ai/) |
-| Install extension | [VS Marketplace — SQLLens.AI](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) |
-| Contact | [hello@skylineai.app](mailto:hello@skylineai.app) |
+---
 
-## What’s in this repo
+## Overview
 
-| Folder | Contents |
-|--------|----------|
-| [`demos/`](demos/README.md) | Markdown demo scripts |
-| [`media/gifs/`](media/gifs/) | UI recordings (same files as sqllens.ai) |
-| [`build/`](build/README.md) | Extension metadata (`package.json`, manifest) |
-| [`sqllens-demos.code-workspace`](sqllens-demos.code-workspace) | Open demos in VS Code / Cursor |
+SQLLens.AI is an advanced **MySQL and MariaDB** workspace inside your editor: visual query building, AI-assisted SQL, query optimization, slow-query analysis, live performance monitoring, and session profiling — in one integrated experience.
 
-### Open in VS Code
+This repository publishes **product demonstrations** (screen recordings and walkthrough guides) aligned with the [sqllens.ai](https://sqllens.ai/) website. It does not include extension source code.
 
-1. **File → Open Workspace from File…** → `sqllens-demos.code-workspace`  
-2. Install recommended **SQLLens.AI** from Marketplace  
-3. Preview `demos/*.md` with markdown preview (`Ctrl+Shift+V`)
+## Product tour
 
-## Demos — same order as [sqllens.ai](https://sqllens.ai/)
+The recordings below follow the same order as the [sqllens.ai](https://sqllens.ai/) feature showcases.
 
-### Main showcases (site hero sections 01–05)
+### 01 · Visual Query Builder
 
-| # | Feature | GIF file |
-|---|---------|----------|
-| 01 | Visual Query Builder | `query-builder-landing-demo.gif` |
-| 02 | AI SQL Copilot | `ai-integration-demo-v4.gif` |
-| 03 | Query Optimization Engine | `query-optimizer-workbench-demo.gif` |
-| 04 | Slow Query Analyzer & DB Profiler | `query-profiler-demo.gif` |
-| 05 | Performance Monitor | `performance-monitor-tour-demo.gif` |
+Drag tables and columns from your schema tree into the SQL editor. SQLLens builds JOINs from relationships and respects the clause under your cursor.
 
-### Full gallery (site section “Every major feature, in motion”)
+<p align="center">
+  <img src="media/gifs/query-builder-landing-demo.gif" alt="Visual Query Builder demo" width="720" />
+</p>
 
-| # | Feature | GIF file |
-|---|---------|----------|
-| 1 | Visual Query Builder | `query-builder-landing-demo.gif` |
-| 2 | Query Builder — highlights | `query-builder-highlight-demo.gif` |
-| 3 | Query Builder — quick start | `query-builder-simple-demo.gif` |
-| 4 | SQL workspace | `sql-workspace-overview-demo.gif` |
-| 5 | Run & EXPLAIN | `sql-workspace-run-demo.gif` |
-| 6 | AI SQL Copilot | `ai-integration-demo.gif` |
-| 7 | AI fix & explain | `ai-integration-demo-v4.gif` |
-| 8 | Visual Explain | `query-optimizer-visual-explain-demo.gif` |
-| 9 | Query Optimizer workbench | `query-optimizer-workbench-demo.gif` |
-| 10 | Query Profiler | `query-profiler-demo.gif` |
-| 11 | Performance Monitor (open) | `performance-monitor-open-demo.gif` |
-| 12 | Performance Monitor tour | `performance-monitor-tour-demo.gif` |
+<p align="center"><a href="demos/query-builder.md"><strong>View demo guide →</strong></a></p>
 
-![01 Visual Query Builder](media/gifs/query-builder-landing-demo.gif)
+### 02 · AI SQL Copilot
 
-![02 AI SQL Copilot](media/gifs/ai-integration-demo-v4.gif)
+Describe what you need in plain language. Generate, fix, and explain SQL without leaving the editor.
 
-![03 Query Optimization Engine](media/gifs/query-optimizer-workbench-demo.gif)
+<p align="center">
+  <img src="media/gifs/ai-integration-demo-v4.gif" alt="AI SQL Copilot demo" width="720" />
+</p>
 
-![04 Slow Query Analyzer & Profiler](media/gifs/query-profiler-demo.gif)
+<p align="center"><a href="demos/ai-integration.md"><strong>View demo guide →</strong></a></p>
 
-![05 Performance Monitor](media/gifs/performance-monitor-tour-demo.gif)
+### 03 · Query Optimization Engine
 
-See [demo catalog](demos/README.md) for walkthrough scripts.
+Turn execution plans into an interactive tree, score each step, and apply index recommendations from the optimizer workbench.
 
-## Install (end users)
+<p align="center">
+  <img src="media/gifs/query-optimizer-workbench-demo.gif" alt="Query Optimization Engine demo" width="720" />
+</p>
 
-1. Open **Extensions** in VS Code or Cursor.  
-2. Search **SQLLens.AI** (`skylineai.sqllens`).  
-3. Install and open the **SQLLens.AI** sidebar.
+<p align="center"><a href="demos/query-optimizer.md"><strong>View demo guide →</strong></a></p>
+
+### 04 · Slow Query Analyzer & Query Profiler
+
+Rank costly statements from slow-query logs and inspect stage-level timings for a session.
+
+<p align="center">
+  <img src="media/gifs/query-profiler-demo.gif" alt="Query Profiler demo" width="720" />
+</p>
+
+<p align="center"><a href="demos/query-profiler.md"><strong>View demo guide →</strong></a></p>
+
+### 05 · Performance Monitor
+
+Open live metrics on demand — processes, health signals, and workload spikes when the database feels slow.
+
+<p align="center">
+  <img src="media/gifs/performance-monitor-tour-demo.gif" alt="Performance Monitor demo" width="720" />
+</p>
+
+<p align="center"><a href="demos/performance-monitor.md"><strong>View demo guide →</strong></a></p>
+
+<p align="center">
+  <a href="demos/"><strong>See all 12 feature recordings →</strong></a>
+</p>
+
+## Get started
+
+1. Install **SQLLens.AI** from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) (`skylineai.sqllens`).
+2. Open the **SQLLens.AI** activity bar and add a MySQL connection.
+3. Explore the [demo guides](demos/) or visit [sqllens.ai](https://sqllens.ai/) for the full product story.
+
+**New to the editor workspace?** Start with the [SQL workspace guide](demos/sql-workspace.md).
+
+## Repository layout
+
+| Path | Description |
+|------|-------------|
+| [`demos/`](demos/) | Step-by-step demo guides for each major feature |
+| [`media/gifs/`](media/gifs/) | Product screen recordings (WebP-quality captures) |
+| [`build/`](build/) | Extension release metadata for integrators |
+| [`sqllens-demos.code-workspace`](sqllens-demos.code-workspace) | Optional VS Code workspace for browsing this repo |
 
 ## License
 
-MIT — see [ATTRIBUTION.md](ATTRIBUTION.md).
-
-## Maintainers
-
-```bash
-cd Skylinemysql
-node scripts/sync_sqllens_ai_public_repo.js --target ../sqllens.ai
-```
-
-Then commit and push `smartmysql/sqllens.ai`.
+Released under the [MIT License](LICENSE).
