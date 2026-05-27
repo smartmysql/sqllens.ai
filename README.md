@@ -88,9 +88,16 @@ Open live metrics on demand — processes, health signals, and workload spikes w
   <a href="demos/"><strong>See all 12 feature recordings →</strong></a>
 </p>
 
+## Install SQLLens.AI
+
+| Channel | Link |
+|---------|------|
+| **Marketplace** (recommended) | [skylineai.sqllens](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) |
+| **Download VSIX** (manual install) | [GitHub Releases](https://github.com/smartmysql/sqllens.ai/releases) — see [INSTALL.md](INSTALL.md) |
+
 ## Get started
 
-1. Install **SQLLens.AI** from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) (`skylineai.sqllens`).
+1. Install from **Marketplace** or **Releases** (VSIX) above.
 2. Open the **SQLLens.AI** activity bar and add a MySQL connection.
 3. Explore the [demo guides](demos/) or visit [sqllens.ai](https://sqllens.ai/) for the full product story.
 
