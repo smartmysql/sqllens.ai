@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "SQLLens demos (read-only showcase)",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["skylineai.sqllens"]
+  }
+}

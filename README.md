@@ -23,7 +23,16 @@ Advanced MySQL GUI for **VS Code** and **Cursor** — query builder, optimizer, 
 |--------|----------|
 | [`demos/`](demos/README.md) | Markdown demo scripts and feature walkthroughs |
 | [`media/gifs/`](media/gifs/) | UI recordings (Query Builder, Optimizer, AI, PM, Profiler, workspace) |
-| [`build/`](build/README.md) | Extension manifest snapshot (version, publisher, engines) — not full `package.json` |
+| [`build/`](build/README.md) | `package.json` (metadata), `extension-manifest.json` — **not** a compilable extension tree |
+| [`sqllens-demos.code-workspace`](sqllens-demos.code-workspace) | Open in VS Code / Cursor to browse demos with recommended extensions |
+
+### Open in VS Code
+
+1. **File → Open Workspace from File…** → choose `sqllens-demos.code-workspace`, or open this folder directly.  
+2. Install the recommended **SQLLens.AI** extension when prompted (or from Marketplace).  
+3. Read demo scripts under `demos/` — preview markdown with built-in preview (`Ctrl+Shift+V`).  
+
+> **Note:** This repo cannot run **F5 → Run Extension**; that requires the private development repository with full source and `out/extension.js`.
 
 ## Featured demo
 

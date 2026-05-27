@@ -1,0 +1,23 @@
+{
+  "name": "sqllens",
+  "displayName": "SQLLens.AI",
+  "description": "Showcase repository — install the extension from VS Marketplace. Extension source and compile output are not published here.",
+  "version": "1.0.2",
+  "publisher": "skylineai",
+  "private": true,
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "homepage": "https://skylineai.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartmysql/sqllens.ai"
+  },
+  "extensionKind": [
+    "workspace"
+  ],
+  "readme": "README.md"
+}
