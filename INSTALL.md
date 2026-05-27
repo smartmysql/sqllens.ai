@@ -1,30 +1,25 @@
-# Install SQLLens.AI (VSIX)
-
-Use this while Marketplace verification is in progress, or for a pinned offline install.
+# Install SQLLens.AI
 
 ## Recommended: Visual Studio Marketplace
 
-After publish completes: [SQLLens.AI on Marketplace](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) (`skylineai.sqllens`).
+Install from the official listing (after publisher verification completes):
 
-Search **SQLLens.AI** in VS Code / Cursor Extensions and click **Install**.
+**[SQLLens.AI on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens)** — extension ID `skylineai.sqllens`
 
-## Download VSIX from GitHub (manual install)
+1. Open **Extensions** in VS Code or Cursor (`Ctrl+Shift+X`).
+2. Search for **SQLLens.AI**.
+3. Click **Install** and reload if prompted.
+4. Open the **SQLLens.AI** activity bar and add a MySQL connection.
 
-1. Open **[Releases](https://github.com/smartmysql/sqllens.ai/releases)**.
-2. Download **`sqllens-1.0.2.vsix`** (or the latest `sqllens-*.vsix` asset).
-3. In VS Code or Cursor: **Extensions** → **`...`** menu → **Install from VSIX…**
-4. Select the downloaded file.
-5. **Reload** the window when prompted.
-6. Open the **SQLLens.AI** activity bar and add a MySQL connection.
+## Verify version
 
-### Verify version
+Extensions → **SQLLens.AI** → should show **1.0.2** (or newer).
 
-Extensions → **SQLLens.AI** → should show **1.0.2** (or the release you installed).
+## Support
 
-## Uninstall
+- Product: [sqllens.ai](https://sqllens.ai/)
+- Contact: [hello@skylineai.app](mailto:hello@skylineai.app)
 
-Extensions → SQLLens.AI → **Uninstall** → reload.
+## About this GitHub repo
 
-## Security note
-
-Only install VSIX files from **[github.com/smartmysql/sqllens.ai/releases](https://github.com/smartmysql/sqllens.ai/releases)** or the official Marketplace listing. Do not install `.vsix` files from unknown mirrors or email attachments.
+[github.com/smartmysql/sqllens.ai](https://github.com/smartmysql/sqllens.ai) contains **demo guides and GIFs only** — not extension source code and not installable binaries. Do not distribute or install `.vsix` files unless they come from the official Marketplace publisher **skylineai**.

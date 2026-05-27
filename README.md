@@ -90,10 +90,11 @@ Open live metrics on demand — processes, health signals, and workload spikes w
 
 ## Install SQLLens.AI
 
-| Channel | Link |
-|---------|------|
-| **Marketplace** (recommended) | [skylineai.sqllens](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens) |
-| **Download VSIX** (manual install) | [GitHub Releases](https://github.com/smartmysql/sqllens.ai/releases) — see [INSTALL.md](INSTALL.md) |
+Install only from the official Marketplace listing:
+
+**[skylineai.sqllens on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens)** — see [INSTALL.md](INSTALL.md).
+
+> This repo does **not** ship `.vsix` installers or extension source code.
 
 ## Get started
 
