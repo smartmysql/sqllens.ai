@@ -34,11 +34,21 @@ Advanced MySQL GUI for **VS Code** and **Cursor** — query builder, optimizer, 
 
 > **Note:** This repo cannot run **F5 → Run Extension**; that requires the private development repository with full source and `out/extension.js`.
 
-## Featured demo
+## Featured demos (all GIFs)
 
-![Query Builder — drag tables and columns into the SQL editor](media/gifs/query-builder-landing-demo.gif)
+| Feature | Preview |
+|---------|---------|
+| Query Builder | ![Query Builder](media/gifs/query-builder-landing-demo.gif) |
+| AI Copilot | ![AI](media/gifs/ai-integration-demo-v4.gif) |
+| Query Optimizer | ![Optimizer](media/gifs/query-optimizer-workbench-demo.gif) |
+| Visual Explain | ![Visual Explain](media/gifs/query-optimizer-visual-explain-demo.gif) |
+| Query Profiler | ![Profiler](media/gifs/query-profiler-demo.gif) |
+| Performance Monitor | ![PM](media/gifs/performance-monitor-tour-demo.gif) |
+| SQL workspace | ![Workspace](media/gifs/sql-workspace-overview-demo.gif) |
 
-See the full [demo catalog](demos/README.md).
+See the full [demo catalog](demos/README.md) and [`media/gifs/`](media/gifs/) (12 captures).
+
+Live site: [sqllens.ai](https://sqllens.ai/) — showcase sections + full gallery.
 
 ## Highlights
 
