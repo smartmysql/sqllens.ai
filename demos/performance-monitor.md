@@ -4,21 +4,18 @@
 
 ## Walkthrough script
 
-### 1. Open Performance Monitor
+### 1. Performance Monitor (sqllens.ai showcase 05)
 
 1. Connect to a running MySQL instance (demo or staging).  
 2. Open **Performance Monitor** from the SQLLens sidebar or Command Palette.  
-3. Point out the metric cards: connections, buffer pool, threads, QPS-style counters (as shown in your build).
+3. Walk through tabs or sections (processes, status variables, config hints).  
+4. Tie one metric to a story: e.g. rising **Threads_running** during a load test.
+
+![Performance Monitor tour — same as sqllens.ai showcase 05](../media/gifs/performance-monitor-tour-demo.gif)
+
+### 2. Open on demand (gallery)
 
 ![Open Performance Monitor](../media/gifs/performance-monitor-open-demo.gif)
-
-### 2. Guided tour
-
-1. Walk through tabs or sections (processes, status variables, config hints — per your SKU).  
-2. Tie one metric to a story: e.g. rising **Threads_running** during a load test.  
-3. Optional: open a long-running query in another tab and watch process list update.
-
-![Performance Monitor tour](../media/gifs/performance-monitor-tour-demo.gif)
 
 ## Talk-track
 

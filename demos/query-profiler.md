@@ -10,7 +10,7 @@
 4. Execute the statement; show the stage breakdown and total time.  
 5. Compare with **Visual Explain** from [Query Optimizer](query-optimizer.md) — profiler = *what time was spent*; explain = *how the plan ran*.
 
-![Query Profiler session](../media/gifs/query-profiler-demo.gif)
+![Slow Query Analyzer & DB Profiler — same as sqllens.ai showcase 04](../media/gifs/query-profiler-demo.gif)
 
 ## Sample narrative
 

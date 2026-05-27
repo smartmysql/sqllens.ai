@@ -1,43 +1,47 @@
 # Product demos
 
-Markdown scripts for sales, solutions engineering, and customer walkthroughs.  
-Each page links to GIFs in [`../media/gifs/`](../media/gifs/).
+Markdown scripts for sales and customer walkthroughs.  
+GIF filenames and order match **[sqllens.ai](https://sqllens.ai/)** (showcases 01–05, then the 12-card gallery).
 
-## Demo catalog
+## Main showcases (website order 01–05)
 
-| Demo | Guide | GIF(s) |
-|------|-------|--------|
-| SQL workspace & connect | [sql-workspace.md](sql-workspace.md) | `sql-workspace-overview-demo.gif`, `sql-workspace-run-demo.gif` |
-| Query Builder | [query-builder.md](query-builder.md) | `query-builder-landing-demo.gif`, `query-builder-highlight-demo.gif` |
-| Query Optimizer (QO) | [query-optimizer.md](query-optimizer.md) | `query-optimizer-visual-explain-demo.gif`, `query-optimizer-workbench-demo.gif` |
-| Performance Monitor (PM) | [performance-monitor.md](performance-monitor.md) | `performance-monitor-open-demo.gif`, `performance-monitor-tour-demo.gif` |
-| Query Profiler | [query-profiler.md](query-profiler.md) | `query-profiler-demo.gif` |
-| AI & LLM integration | [ai-integration.md](ai-integration.md) | `ai-integration-demo.gif`, `ai-integration-demo-v4.gif` |
+| # | Feature | Guide | GIF |
+|---|---------|-------|-----|
+| 01 | Visual Query Builder | [query-builder.md](query-builder.md) | `query-builder-landing-demo.gif` |
+| 02 | AI SQL Copilot | [ai-integration.md](ai-integration.md) | `ai-integration-demo-v4.gif` |
+| 03 | Query Optimization Engine | [query-optimizer.md](query-optimizer.md) | `query-optimizer-workbench-demo.gif` |
+| 04 | Slow Query Analyzer & DB Profiler | [query-profiler.md](query-profiler.md) | `query-profiler-demo.gif` |
+| 05 | Performance Monitor | [performance-monitor.md](performance-monitor.md) | `performance-monitor-tour-demo.gif` |
 
-## Suggested demo order (30–45 min)
+## Full gallery (website order)
 
-1. Connect and open the sidebar — [sql-workspace.md](sql-workspace.md)  
-2. Drag-and-drop Query Builder — [query-builder.md](query-builder.md)  
-3. Run a slow query → Visual Explain — [query-optimizer.md](query-optimizer.md)  
-4. Live metrics — [performance-monitor.md](performance-monitor.md)  
-5. AI generate/fix SQL — [ai-integration.md](ai-integration.md)  
+| # | Feature | GIF |
+|---|---------|-----|
+| 1 | Visual Query Builder | `query-builder-landing-demo.gif` |
+| 2 | Query Builder — highlights | `query-builder-highlight-demo.gif` |
+| 3 | Query Builder — quick start | `query-builder-simple-demo.gif` |
+| 4 | SQL workspace | `sql-workspace-overview-demo.gif` |
+| 5 | Run & EXPLAIN | `sql-workspace-run-demo.gif` |
+| 6 | AI SQL Copilot | `ai-integration-demo.gif` |
+| 7 | AI fix & explain | `ai-integration-demo-v4.gif` |
+| 8 | Visual Explain | `query-optimizer-visual-explain-demo.gif` |
+| 9 | Query Optimizer workbench | `query-optimizer-workbench-demo.gif` |
+| 10 | Query Profiler | `query-profiler-demo.gif` |
+| 11 | Performance Monitor (open) | `performance-monitor-open-demo.gif` |
+| 12 | Performance Monitor tour | `performance-monitor-tour-demo.gif` |
+
+## Suggested live demo (30–45 min)
+
+Follow website pillar order:
+
+1. [query-builder.md](query-builder.md) — 01 Visual Builder  
+2. [ai-integration.md](ai-integration.md) — 02 AI Copilot  
+3. [query-optimizer.md](query-optimizer.md) — 03 Optimization (+ Visual Explain in gallery)  
+4. [query-profiler.md](query-profiler.md) — 04 SQA / Profiler  
+5. [performance-monitor.md](performance-monitor.md) — 05 Performance Monitor  
+
+Optional: [sql-workspace.md](sql-workspace.md) for connect + editor basics (gallery items 4–5).
 
 ## Sample database
 
-Use the MySQL **`employees`** sample schema for JOIN-heavy stories.  
-Upstream: [datacharmer/test_db](https://github.com/datacharmer/test_db).
-
-```bash
-git clone https://github.com/datacharmer/test_db.git
-cd test_db
-mysql -h 127.0.0.1 -u root -p < employees.sql
-```
-
-Verify: `SELECT COUNT(*) FROM employees.employees;`
-
-## Day-of checklist
-
-1. Test connection and expand `employees` in the tree.  
-2. Open a new `.sql` file bound to that database.  
-3. Run **two** scenarios from Query Builder + Optimizer guides.  
-4. Have Marketplace install link ready for prospects.  
+MySQL **`employees`** schema — [datacharmer/test_db](https://github.com/datacharmer/test_db).

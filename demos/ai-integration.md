@@ -4,22 +4,24 @@
 
 ## Walkthrough script
 
-### 1. Generate SQL from natural language
+### 1. AI SQL Copilot (sqllens.ai showcase 02)
 
 1. Open the **AI Assist** panel or command tied to SQL generation.  
 2. Prompt example: *“List employees hired in 1999 with current salary above department average.”*  
 3. Show generated SQL inserted or offered into the active editor.  
 4. Emphasize **active database context** — generation respects the connection/schema bound to the file.
 
-![AI integration overview](../media/gifs/ai-integration-demo.gif)
+![AI SQL Copilot — same as sqllens.ai showcase 02](../media/gifs/ai-integration-demo-v4.gif)
 
-### 2. Fix / explain flow
+### 2. Generate & autocomplete (gallery)
+
+![AI SQL integration overview](../media/gifs/ai-integration-demo.gif)
+
+### 3. Fix / explain flow
 
 1. Paste a broken query (missing join, wrong alias).  
 2. Run **Fix SQL** or **Explain this query**.  
 3. Narrate diff or explanation panel — suitable for onboarding junior devs.
-
-![AI integration v4 flow](../media/gifs/ai-integration-demo-v4.gif)
 
 ## Talk-track
 

@@ -10,7 +10,16 @@
 
 ## Walkthrough script
 
-### 1. Open Visual Explain
+### 1. Query Optimization Engine (sqllens.ai showcase 03)
+
+1. From a slow query, open the **Query Optimizer** workbench.  
+2. Show original SQL, plan tree, and **index suggestions**.  
+3. If available, demonstrate **before / after** cost comparison after applying a suggested index (on a dev instance).  
+4. Mention **batch optimize** when reviewing multiple statements from Slow Query Log Analyzer.
+
+![Optimizer workbench — same as sqllens.ai showcase 03](../media/gifs/query-optimizer-workbench-demo.gif)
+
+### 2. Visual Explain (gallery)
 
 1. Open a `.sql` file connected to your demo database.  
 2. Place the cursor on a slow `SELECT` (e.g. multi-table join on `employees`).  
@@ -18,15 +27,6 @@
 4. Narrate the plan tree: scan type, estimated rows, cost highlights.
 
 ![Visual Explain](../media/gifs/query-optimizer-visual-explain-demo.gif)
-
-### 2. Optimizer workbench
-
-1. From the same query, open the **Query Optimizer** workbench.  
-2. Show original SQL, plan tree, and **index suggestions**.  
-3. If available, demonstrate **before / after** cost comparison after applying a suggested index (on a dev instance).  
-4. Mention **batch optimize** when reviewing multiple statements from Slow Query Log Analyzer.
-
-![Optimizer workbench](../media/gifs/query-optimizer-workbench-demo.gif)
 
 ## Sample slow query (employees)
 
