@@ -1,0 +1,28 @@
+{
+  "name": "sqllens",
+  "displayName": "SQLLens.AI",
+  "description": "sqllens.ai — advanced MySQL GUI with AI-powered query optimization and debugging",
+  "version": "1.0.2",
+  "publisher": "skylineai",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Keymaps",
+    "Themes"
+  ],
+  "keywords": [
+    "sqllens",
+    "sqllens.ai",
+    "SQL",
+    "MySQL",
+    "Database",
+    "Query Optimizer",
+    "Performance",
+    "Debugger"
+  ],
+  "homepage": "https://skylineai.app",
+  "marketplace": "https://marketplace.visualstudio.com/items?itemName=skylineai.sqllens",
+  "installNote": "Install from VS Marketplace or Open VSX. This public repo does not ship extension source."
+}
