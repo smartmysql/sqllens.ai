@@ -28,7 +28,7 @@
 
 SQLLens.AI is an advanced **MySQL and MariaDB** workspace inside your editor: visual query building, AI-assisted SQL, query optimization, slow-query analysis, live performance monitoring, and session profiling — in one integrated experience.
 
-This repository publishes **product demonstrations** (screen recordings and walkthrough guides) aligned with the [sqllens.ai](https://sqllens.ai/) website. It does not include extension source code.
+This repository publishes **product demonstrations** (screen recordings and walkthrough guides) aligned with the [sqllens.ai](https://sqllens.ai/) website. It does not include extension source code. Demo https://youtu.be/3kf03MTH9Bc
 
 ## Product tour
 
