@@ -1,6 +1,8 @@
 # Demo guides
 
-Step-by-step walkthroughs for presenting SQLLens.AI. Each guide matches a recording on [sqllens.ai](https://sqllens.ai/) and in [`../media/gifs/`](../media/gifs/).
+Step-by-step walkthroughs for presenting SQLLens.AI. Each guide matches a recording on [sqllens.ai](https://sqllens.ai/) and in [`../media/gifs/`](../media/gifs/). 
+
+Demo https://youtu.be/3kf03MTH9Bc
 
 ## Featured showcases
 
