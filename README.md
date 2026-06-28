@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/logo-256.png" alt="SQLLens.AI" width="120" />
+  <img src="media/v4lt58B1_400x400.jpg" alt="SQLLens.AI" width="120" />
 </p>
 
 <h1 align="center">SQLLens.AI</h1>
